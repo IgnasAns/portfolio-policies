@@ -1,0 +1,63 @@
+/* Shared stylesheet for the portfolio privacy-policy site.
+   No external fonts, no tracking, no analytics, no cookies. */
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #1c1f23;
+  --muted: #5b6570;
+  --rule: #dfe3e8;
+  --accent: #1a4d8f;
+  --card: #f6f8fa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171a;
+    --fg: #e8eaed;
+    --muted: #9aa4ae;
+    --rule: #2b3138;
+    --accent: #79b0f0;
+    --card: #1c2126;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  padding: 1.25rem 1rem 3rem;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+main { max-width: 46rem; margin: 0 auto; }
+h1 { font-size: 1.55rem; line-height: 1.25; margin: 0 0 .35rem; }
+h2 { font-size: 1.12rem; margin: 1.8rem 0 .5rem; }
+p, li { margin: .6rem 0; }
+ul { padding-left: 1.25rem; }
+a { color: var(--accent); }
+.lede { color: var(--muted); margin-top: 0; }
+.meta { margin: .9rem 0 1.4rem; padding: .85rem 1rem; background: var(--card);
+        border: 1px solid var(--rule); border-radius: 8px; font-size: .95rem; }
+.meta dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: .25rem .85rem; }
+.meta dt { color: var(--muted); }
+.meta dd { margin: 0; overflow-wrap: anywhere; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0 1rem; }
+footer { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+ul.apps { list-style: none; padding: 0; margin: 1.5rem 0 0; }
+ul.apps li { margin: 0 0 .75rem; padding: .85rem 1rem; background: var(--card);
+             border: 1px solid var(--rule); border-radius: 8px; }
+ul.apps a { font-weight: 600; text-decoration: none; }
+ul.apps a:hover, ul.apps a:focus { text-decoration: underline; }
+ul.apps .pkg { display: block; color: var(--muted); font-size: .85rem;
+               font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+               overflow-wrap: anywhere; }
+ul.apps .desc { display: block; color: var(--muted); font-size: .92rem; margin-top: .15rem; }
+.policy-list { padding-left: 1.25rem; }
+.policy-list a { text-decoration: none; }
+.policy-list a:hover, .policy-list a:focus { text-decoration: underline; }
+@media (max-width: 30rem) {
+  body { font-size: 16px; padding: 1rem .85rem 2.5rem; }
+  .meta dl { grid-template-columns: 1fr; gap: 0; }
+  .meta dd { margin-bottom: .5rem; }
+}
