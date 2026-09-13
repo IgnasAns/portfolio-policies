@@ -32,6 +32,10 @@ APPS = [
      "MileMark lets you record trips, mileage and receipt details for expense tracking."),
     ("lumen", "Echo Notes — Offline Voice Notes", "com.ianskaitis.lumen",
      "Echo Notes lets you record, store and play back voice notes entirely on your device."),
+    ("quay", "Fisherman's Wharf Tycoon", "com.iaengineering.wharftycoon",
+     "Fisherman's Wharf Tycoon is an offline harbour tycoon game: catch fish at the pier, "
+     "clean them at the table, stock the ice display, serve the queue at the till, hire a "
+     "crew and expand across eight plots of the quay."),
 ]
 
 STYLE = """/* Shared stylesheet for the portfolio privacy-policy site.

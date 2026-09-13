@@ -11,7 +11,6 @@ Live site: https://ignasans.github.io/portfolio-policies/
 - `style.css` — single shared stylesheet (responsive, light/dark, no external fonts)
 - `privacy/<code>.html` — one privacy policy per app
 - `privacy/template.html` — blank template used to generate new policies
-- `build.py` — stdlib-only generator that produced these pages (documentation of provenance)
 - `.nojekyll` — serve files as-is
 
 ## Apps
@@ -28,6 +27,7 @@ Live site: https://ignasans.github.io/portfolio-policies/
 | `orbit` | Shiftly — Shift Work Calendar | `com.ianskaitis.orbit` | [privacy/orbit.html](privacy/orbit.html) |
 | `cinder` | MileMark — Mileage & Receipts | `com.ianskaitis.cinder` | [privacy/cinder.html](privacy/cinder.html) |
 | `lumen` | Echo Notes — Offline Voice Notes | `com.ianskaitis.lumen` | [privacy/lumen.html](privacy/lumen.html) |
+| `quay` | Fisherman's Wharf Tycoon | `com.iaengineering.wharftycoon` | [privacy/quay.html](privacy/quay.html) |
 
 ## Use with Google Play
 
